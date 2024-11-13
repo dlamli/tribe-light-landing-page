@@ -1,4 +1,7 @@
-const pricingTiers = [
+import { TPricingTier } from "@/libs";
+import { PricingTier } from "@/sections";
+
+const pricingTiers: TPricingTier[] = [
   {
     title: "Free",
     monthlyPrice: 0,
@@ -51,5 +54,22 @@ const pricingTiers = [
 ];
 
 export const Pricing = () => {
-  return null;
+  return (
+    <section className="py-24">
+      <div className="container">
+        <div className="section-heading">
+          <h2 className="section-title">Pricing</h2>
+          <p className="section-description mt-5">
+            Free forever. Upgrade for unlimited tasks, better security, and
+            exclusive features.
+          </p>
+        </div>
+        <div className="flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center">
+          {pricingTiers.map((pricingTier) => (
+            <PricingTier key={pricingTier.title} {...pricingTier} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };

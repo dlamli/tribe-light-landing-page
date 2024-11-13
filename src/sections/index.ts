@@ -4,5 +4,6 @@ export * from "./Header";
 export * from "./Hero";
 export * from "./LogoTicker";
 export * from "./Pricing";
+export * from "./PricingTier";
 export * from "./ProductShowcase";
 export * from "./Testimonials";
