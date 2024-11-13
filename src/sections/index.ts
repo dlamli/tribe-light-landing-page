@@ -6,4 +6,5 @@ export * from "./LogoTicker";
 export * from "./Pricing";
 export * from "./PricingTier";
 export * from "./ProductShowcase";
+export * from "./TestimonialColumn";
 export * from "./Testimonials";

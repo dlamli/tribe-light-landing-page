@@ -16,7 +16,7 @@ export const PricingTier = ({
     <div
       key={title}
       className={twMerge(
-        "p-10 border border-[#F1F1F1] rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full",
+        "card",
         inverse && "border-black bg-black text-white/60 "
       )}
     >

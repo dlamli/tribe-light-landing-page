@@ -6,3 +6,10 @@ export type TPricingTier = {
   inverse: boolean;
   features: string[];
 };
+
+export type TTestimonial = {
+  text: string;
+  imageSrc: string;
+  name: string;
+  username: string;
+};
