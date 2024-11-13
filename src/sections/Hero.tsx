@@ -9,10 +9,8 @@ export const Hero = () => {
       <div className="container">
         <div className="md:flex md:items-center">
           <div className="md:w-[478px]">
-            <div className="text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight">
-              Version 2.0 is here
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
+            <p className="title-tag">Version 2.0 is here</p>
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-title-gradient mt-6">
               Pathway to productivity
             </h1>
             <p className="text-xl text-[#010D3E] tracking-tight mt-6">

@@ -1,4 +1,4 @@
-import { Header, Hero, LogoTicker } from "@/sections";
+import { Header, Hero, LogoTicker, ProductShowcase } from "@/sections";
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <Header />
       <Hero />
       <LogoTicker />
+      <ProductShowcase />
     </>
   );
 }
