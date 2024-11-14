@@ -13,3 +13,11 @@ export type TTestimonial = {
   name: string;
   username: string;
 };
+
+export type TUseMotion = {
+  ref: React.RefObject<HTMLDivElement>;
+  translateOption: {
+    inputRange: number[];
+    outPutRange: number[];
+  };
+};

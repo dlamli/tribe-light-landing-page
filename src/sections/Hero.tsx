@@ -13,16 +13,18 @@ import ArrowIcon from "@/assets/arrow-right.svg";
 import CogImage from "@/assets/cog.png";
 import CylinderImage from "@/assets/cylinder.png";
 import NoodleImage from "@/assets/noodle.png";
+import { useMotion } from "@/hooks";
 
 export const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
 
-  const { scrollYProgress } = useScroll({
-    target: heroRef,
-    offset: ["start end", "end start"],
+  const { translateY } = useMotion({
+    ref: heroRef,
+    translateOption: {
+      inputRange: [0, 1],
+      outPutRange: [150, -150],
+    },
   });
-
-  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
   // useMotionValueEvent(scrollYProgress, "change", (latestValue) =>
   //   console.log(latestValue)
