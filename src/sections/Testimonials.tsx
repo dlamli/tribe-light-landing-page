@@ -7,7 +7,6 @@ import avatar6 from "@/assets/avatar-6.png";
 import avatar7 from "@/assets/avatar-7.png";
 import avatar8 from "@/assets/avatar-8.png";
 import avatar9 from "@/assets/avatar-9.png";
-import Image from "next/image";
 import { TestimonialColumn } from "./TestimonialColumn";
 
 const testimonials = [
@@ -86,15 +85,17 @@ export const Testimonials = () => {
           </p>
         </div>
 
-        <div className="flex justify-center gap-6">
-          <TestimonialColumn testimonial={firstColumn} />
+        <div className="flex justify-center gap-6 pb-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[738px] overflow-hidden">
+          <TestimonialColumn testimonial={firstColumn} duration={15} />
           <TestimonialColumn
             testimonial={secondColumn}
-            className="hidden md:flex"
+            className="hidden md:block"
+            duration={20}
           />
           <TestimonialColumn
             testimonial={thirdColumn}
-            className="hidden lg:flex"
+            className="hidden lg:block"
+            duration={18}
           />
         </div>
       </div>
